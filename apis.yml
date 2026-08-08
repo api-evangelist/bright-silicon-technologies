@@ -1,10 +1,21 @@
 aid: bright-silicon-technologies
 name: Bright Silicon Technologies
-description: 'Bright Silicon Technologies is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Bright Silicon Technologies is a Pleasanton, California photonics and semiconductor company,
+  founded in 2020 out of work at Lawrence Livermore National Laboratory, that builds solid-state
+  optical beam control. Its Lightfield Directing Array (LDA) is a chip-scale segmented micromirror
+  array — described by the company as "400 micro-gimbals on a chip" — that steers light with no
+  moving parts, offering a plus-or-minus 30 degree optical field of regard at sub-microradian
+  precision, a 350k degrees/second slew rate and 100ns settling time. The company positions the LDA
+  as a replacement for bulky mechanical gimbals and conventional MEMS mirrors in free-space optical
+  communication terminals, LIDAR, counter-UAS tracking, adaptive optics and metal 3D printing. The
+  product is silicon and optical hardware sold to aerospace, defense and datacenter customers; the
+  company publishes no public developer program, API, or SDK.
 url: https://raw.githubusercontent.com/api-evangelist/bright-silicon-technologies/refs/heads/main/apis.yml
+image: https://media.base44.com/images/public/69f2bc7be8bc1a13a0f66e49/68798cfdb_Bright_Logo_20.png
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/bright-silicon-technologies_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +23,14 @@ created: '2026-08-08'
 modified: '2026-08-08'
 tags:
 - Company
+- Photonics
+- Semiconductors
+- Optical Communications
+- Beam Steering
+- MEMS
+- LiDAR
+- Hardware
+- Aerospace and Defense
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,35 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bright-silicon-technologies-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/bright-silicon-technologies_stock/
+  url: https://www.bright-si-tech.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bright-silicon-technologies/
+- type: Twitter
+  url: https://x.com/BrightSiTech
+- type: Email
+  url: mailto:Contact@Bright-Si-Tech.com
+x-enrichment:
+  date: '2026-08-08'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Bright Silicon sells a silicon micromirror chip and optical terminals, not software — its entire
+    site is a single-route base44 SPA whose JavaScript bundle contains only Home, About, Technology,
+    Team, Careers and Contact pages, with no developer, API, SDK or docs page anywhere in it.
+  evidence:
+  - url: https://www.bright-si-tech.com/
+    status: 200
+  - url: https://www.bright-si-tech.com/openapi.json
+    status: 404
+  - url: https://www.bright-si-tech.com/.well-known/agent-card.json
+    status: 404
+  - url: https://docs.bright-si-tech.com/
+    status: 525
+  checked: '2026-08-08'
