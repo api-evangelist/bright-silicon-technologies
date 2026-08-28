@@ -12,6 +12,17 @@ description: >-
   product is silicon and optical hardware sold to aerospace, defense and datacenter customers; the
   company publishes no public developer program, API, or SDK.
 url: https://raw.githubusercontent.com/api-evangelist/bright-silicon-technologies/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://media.base44.com/images/public/69f2bc7be8bc1a13a0f66e49/68798cfdb_Bright_Logo_20.png
 x-type: company
 x-source: harvest:secondary-market
