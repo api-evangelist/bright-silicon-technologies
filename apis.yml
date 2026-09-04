@@ -23,6 +23,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://media.base44.com/images/public/69f2bc7be8bc1a13a0f66e49/68798cfdb_Bright_Logo_20.png
 x-type: company
 x-source: harvest:secondary-market
